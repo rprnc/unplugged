@@ -175,6 +175,12 @@ address {
  
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* -------------------- Base Styles -------------------- */
 
 .content-wrapper {
@@ -252,6 +258,7 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  background-color: #202322;
 }
 
 footer p {
@@ -261,7 +268,6 @@ footer p {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
-  background-color: #202322;
 }
 
 footer .contact {
@@ -375,7 +381,6 @@ aside {
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
-  margin: 0 300px;
 }
 
 .map iframe {
@@ -502,8 +507,10 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-      /* General styles */
-      .content-wrapper {
+    
+    /* General styles */
+    
+    .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
     }
@@ -511,8 +518,9 @@ aside {
     /* Header */
  
     header {
-      justify-content: space-around;
-      padding: 33px 0;
+        justify-content: space-around;
+        padding: 33px 0;
+        background-color: #202322;
     }
  
     header .content-wrapper {
@@ -522,6 +530,10 @@ aside {
  
     header nav {
         width: 20%;
+    }
+
+    header img {
+        width: 40%;
     }
  
     header nav ul {
@@ -598,40 +610,59 @@ aside {
    ========================================================================== */
  
    .mission-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
 
-.mission-content p {
-    width: 45%;
-}
+    .mission-content p {
+        width: 45%;
+    }
 
-.contact-section .content-wrapper h2 {
-    width: 80%;
-}
+    .mission {
+        background-color: #527158;
+    }
 
-.contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+    .contact-section .content-wrapper h2 {
+        width: 80%;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .map figure {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
    .faq .content-wrapper {
-    justify-content: space-between;
-}
+        justify-content: space-between;
+    }
 
-.faq-content {
-    flex-basis: 45%;
-}
+    .faq-content {
+        flex-basis: 45%;
+    }
 
-.faq h2 {
-    width: 100%;
-}
+    .faq h2 {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
