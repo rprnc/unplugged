@@ -614,9 +614,27 @@ aside {
         justify-content: space-between;
         align-items: center;
     }
+
+    footer .social {
+        width:20%;
+    }
+    
+    footer .social h4 {
+      text-align: center;
+    }
+
+    footer .social-icons {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+    }
  
     footer .contact {
         margin-bottom: 0;
+    }
+
+    footer .contact h4 {
+      text-align: center;
     }
  
     footer .copyright {
